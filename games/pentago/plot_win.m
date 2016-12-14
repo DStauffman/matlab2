@@ -12,7 +12,8 @@ function []=plot_win(position)
 %     position = reshape([1 1 1 1 1 0 zeros(1,30)]);
 %     plot_win(position);
 %
-% Written by David Stauffer in Jan 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 % get static globals
 [COLOR,RADIUS] = get_static_globals({'COLOR','RADIUS'});

@@ -34,6 +34,9 @@ function [] = display_controls(handles)
 % Prototype:
 %     [game,handles] = pentago;
 %     display_controls(handles);
+%
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 global cur_move
 global cur_game
@@ -44,7 +47,7 @@ global gamestat
 PLAYER = get_static_globals({'PLAYER'});
 
 % show/hide New Game Button
-if gamestat(cur_game,2) == PLAYER.none;
+if gamestat(cur_game,2) == PLAYER.none
     set(handles.button_newgame,'Visible','off');
 else
     set(handles.button_newgame,'Visible','on');

@@ -1,6 +1,19 @@
 function [out] = get_globals(value)
 
 % GET_GLOBALS  returns the desired global variable
+%
+% Input:
+%     value : (row) string specifying the global to return,
+%         from {'board1', 'board2', 'chars', 'costs', 'moves', 'logging'}
+%
+% Output:
+%     out : Output varies based on the desired global
+%
+% Prototype:
+%     board = get_globals('board1');
+%
+% Change Log:
+%     1.  Written by David C. Stauffer in December 2015.
 
 switch value
     case 'board1'

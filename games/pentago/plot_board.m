@@ -36,7 +36,8 @@ function [] = plot_board(handles,position)
 %     [game,handles] = pentago;
 %     plot_board(handles);
 %
-% Written by David Stauffer in Jan 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 % get static globals
 [COLOR,PLAYER,RADIUS] = get_static_globals({'COLOR','PLAYER','RADIUS'});

@@ -32,7 +32,8 @@ function [varargout] = get_static_globals(list)
 % Prototype:
 %     [PLAYER,WIN] = get_static_globals({'PLAYER','WIN'});
 %
-% Written by David Stauffer in Jan 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 % The dynamic globals are:
 % global cur_move

@@ -12,7 +12,8 @@ function [move] = calc_cur_move()
 % Prototype:
 %     move = calc_cur_move;
 %
-% Written by David Stauffer in Jan 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 % declare globals
 global cur_move

@@ -36,7 +36,8 @@ function [] = update_game_stats(handles)
 %     [game,handles] = pentago;
 %     update_game_stats(handles);
 %
-% Written by David Stauffer in Jan 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 global gamestat
 

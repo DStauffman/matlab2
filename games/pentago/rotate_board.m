@@ -14,8 +14,9 @@ function [new_pos] = rotate_board(old_pos,quad,dir)
 %     old_pos = reshape([1 1 1 1 1 0 zeros(1,30)],6,6);
 %     new_pos = rotate_board(old_pos,1,1);
 %
-% Written by David Stauffer in Jan 2010.
-% Updated by David Stauffer in Feb 2010 to rotate multiple 36xN boards all in one call.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
+%     2.  Updated by David C. Stauffer in Feb 2010 to rotate multiple 36xN boards all in one call.
 
 % determine if 6x6 board or 36xN
 [r,c] = size(old_pos);

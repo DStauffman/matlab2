@@ -1,10 +1,21 @@
 function [seeds] = build_brackets(waves)
 
-% PROTOTYPE:
+% BUILD_BRACKETS  builds the brackets based on the seeds for the given wave.
+%
+% Input:
+%     waves : (scalar) number of waves that will be used in the bracket.
+%
+% Output:
+%     seeds : (1xN) list of seeds [num]
+%
+% Prototype:
 %     seeds = build_brackets(0);
 %     seeds = build_brackets(1);
 %     seeds = build_brackets(2);
 %     seeds = build_brackets(3);
+%
+% Change Log:
+%     1.  Written by David Stauffer in Feb 2014.
 
 seeds = [1 2 3];
 for i = 1:waves

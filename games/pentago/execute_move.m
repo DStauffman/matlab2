@@ -51,7 +51,8 @@ function execute_move(handles,quad,dir)
 %     [game,handles] = pentago;
 %     execute_move(handles,1,1);
 %
-% Written by David Stauffer in Jan 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 % declare globals
 global cur_move

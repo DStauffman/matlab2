@@ -11,7 +11,8 @@ function [] = draw_turn_arrows(handles)
 % Prototype:
 %     (TBD)
 %
-% Written by David Stauffer in Mar 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 %
 % Note: this code is already embedded in the .fig file
 

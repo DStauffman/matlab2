@@ -43,9 +43,10 @@ function []=place_piece(hObject, eventdata, handles) %#ok<INUSL>
 %     global move_cir : (scalar) handle to next move piece that was plotted [num]
 %
 % Prototype:
-%     only intended for calling by the mouse click within the GUI
+%     % only intended for calling by the mouse click within the GUI
 %
-% Written by David Stauffer in Jan 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 % declare globals
 global cur_game

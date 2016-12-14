@@ -16,8 +16,9 @@ function [winner] = check_for_win(position)
 %     position = reshape([1 1 1 1 1 0 zeros(1,30)],6,6);
 %     check_for_win(position);
 %
-% Written by David Stauffer in Jan 2010.
-% Updated by David Stauffer in Mar 2010 to check for a full game board tie position.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
+%     2.  Updated by David Stauffer in Mar 2010 to check for a full game board tie position.
 
 % declare globals
 global cur_game

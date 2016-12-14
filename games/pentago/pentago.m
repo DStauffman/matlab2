@@ -43,7 +43,8 @@ function varargout = pentago(varargin)
 % Prototype:
 %     [game,handles] = pentago;
 %
-% Written by David Stauffer in Jan 2010 based on the existing board game Pentago.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010 based on the existing board game Pentago.
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;

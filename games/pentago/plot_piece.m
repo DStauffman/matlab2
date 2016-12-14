@@ -1,4 +1,4 @@
-function [fill_handle]=plot_piece(xc,yc,r,c,half)
+function [fill_handle] = plot_piece(xc,yc,r,c,half)
 
 % PLOT_PIECE  plots a piece on the board.
 %
@@ -15,7 +15,8 @@ function [fill_handle]=plot_piece(xc,yc,r,c,half)
 % Prototype:
 %     plot_piece(1,1,0.45,[1 1 1]);
 %
-% Written by David Stauffer in Jan 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 switch nargin
     case 4

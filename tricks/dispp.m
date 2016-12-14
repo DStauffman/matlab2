@@ -2,7 +2,7 @@ function [] = dispp(in,name)
 
 % DISPP  is a structure recursive version of the built-in 'disp'
 %
-% PROTOTYPE:
+% Prototype:
 %     disp('text');
 %     a.b = 1;
 %     disp(a);
@@ -10,6 +10,9 @@ function [] = dispp(in,name)
 %     disp(b);
 %     c(1:5) = a;
 %     disp(a);
+%
+% Change Log:
+%     1.  Attempted by David C. Stauffer circa 2006.  Never got working sastifactorily.
 
 if nargin == 1
     name = inputname(1);

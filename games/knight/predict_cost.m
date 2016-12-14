@@ -17,6 +17,9 @@ function [costs] = predict_cost(board)
 %     board(9) = PIECE_.final;
 %     costs    = predict_cost(board);
 %     assert(all(all(costs == [2 1.5 1 0.5 0; 2 1.5 1 1 0.5])));
+%
+% Change Log:
+%     1.  Written by David C. Stauffer in December 2015.
 
 % get the board size
 [m, n] = size(board);

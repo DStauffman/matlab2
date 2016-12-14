@@ -26,7 +26,8 @@ function moves = find_moves(position)
 %     position = reshape([0 0 0 0 0 0 0 1 0 1 1 1 zeros(1,24)],6,6);
 %     moves    = find_moves(position);
 %
-% Written by David Stauffer in Feb 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Feb 2010.
 
 position = position(:);
 

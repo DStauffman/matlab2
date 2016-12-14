@@ -17,7 +17,8 @@ function [] = close_function()
 % Prototype:
 %     close_function;
 %
-% Written by David Stauffer in Jan 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Jan 2010.
 
 % declare globals
 global cur_move

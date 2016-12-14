@@ -50,7 +50,8 @@ function [] = plot_possible_win(handles,moves)
 %     moves    = find_moves(position);
 %     plot_possible_win(handles,moves);
 %
-% Written by David Stauffer in Feb 2010.
+% Change Log:
+%     1.  Written by David C. Stauffer in Feb 2010.
 
 % load static globals
 PLAYER = get_static_globals({'PLAYER'});
