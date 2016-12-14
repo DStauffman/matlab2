@@ -29,11 +29,11 @@ function [data] = initialize_data(board) %#codegen
 %         'best_moves'; 'costs'; 'current_cost'; 'final_pos'; 'is_solved'; 'moves'; ...
 %         'original_board'; 'pred_costs'; 'transports'})));
 %
-% Notes:
-%     1.  To support compilation, all the fields must be initialized before data can be used.
-%
 % Change Log:
 %     1.  Written by David C. Stauffer in December 2015.
+%
+% Notes:
+%     1.  To support compilation, all the fields must be initialized before data can be used.
 
 %% Hard-coded values
 % max number of moves

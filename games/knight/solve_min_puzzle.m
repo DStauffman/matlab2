@@ -11,12 +11,12 @@ function [moves, data] = solve_min_puzzle(board)
 %
 % Prototype:
 %     board = repmat(PIECE_.null, 2,5);
-%     board[0, 0] = PIECE_.start;
-%     board[0, 4] = PIECE_.final;
+%     board(1, 1) = PIECE_.start;
+%     board(1, 5) = PIECE_.final;
 %     moves = solve_min_puzzle(board);
-%     assert(all(moves == [2 -2])));
+%     assert(all(moves == [2 -2]));
 %
-%     % Gives:
+%     % Displays:
 %     Initializing solver.
 %     Solution found for cost of: 2.
 %     Elapsed time : ...

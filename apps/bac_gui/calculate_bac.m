@@ -17,11 +17,11 @@ function [bac] = calculate_bac(time_drinks, drinks, time_out, body_weight)
 %     body_weight = 105;
 %     bac = calculate_bac(time_drinks, drinks, time_out, body_weight);
 %
-% Notes:
-%     1.  One standard drink is a 1 oz 100 proof, 5 oz of wine, or 12 oz of regular beer.
-%
 % Change Log:
 %     1.  Written by David C. Stauffer in May 2016.
+%
+% Notes:
+%     1.  One standard drink is a 1 oz 100 proof, 5 oz of wine, or 12 oz of regular beer.
 
 % hard-coded values
 drink_weight_conv = 0.0375; % converts standard drinks consumed per pound to BAC
