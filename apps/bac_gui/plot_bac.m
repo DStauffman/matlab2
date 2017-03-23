@@ -52,7 +52,7 @@ bac = ratio2per * calculate_bac(time_drinks, drinks, time_out, body_weight);
 
 % plot the data
 fig = figure('name', ['BAC vs. Time for ', name]);
-ax = axes;  
+ax = axes;
 plot(ax, time_out, bac, '.-', 'DisplayName', 'BAC');
 hold('on');
 if ~isnan(legal_limit)
