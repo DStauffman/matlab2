@@ -32,7 +32,7 @@ switch nargin
     case 4
         % nop
     otherwise
-        error('dstauffman:knight:UnexpectedNargin', 'Unexpected number of inputs: "%s"', nargin);
+        error('dstauffman:knight:UnexpectedNargin', 'Unexpected number of inputs: "%i"', nargin);
 end
 
 % initialize output

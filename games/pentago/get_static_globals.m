@@ -149,5 +149,5 @@ switch nargin
             end
         end
     otherwise
-        error('dstauffman:pentago:UnexpectedNargin', 'Unexpected number of inputs: "%s"', nargin);
+        error('dstauffman:pentago:UnexpectedNargin', 'Unexpected number of inputs: "%i"', nargin);
 end
