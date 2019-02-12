@@ -17,7 +17,7 @@ classdef(Enumeration) MOVE_ < int32
 %         .winning   =  5 : Move that finished the puzzle
 %
 % Prototype:
-%     MOVE_.off_board         % returns 'off_board' as an enumeratod MOVE_ type
+%     MOVE_.off_board         % returns 'off_board' as an enumerated MOVE_ type
 %     double(MOVE_.off_board) % returns -2, which is the enumerated value of MOVE_.off_board
 %
 % See Also:

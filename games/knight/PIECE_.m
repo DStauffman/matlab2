@@ -19,7 +19,7 @@ classdef(Enumeration) PIECE_ < int32
 %         .visited   = 9 : previously visited square that cannot be used again
 %
 % Prototype:
-%     PIECE_.water         % returns 'water' as an enumeratod PIECE_ type
+%     PIECE_.water         % returns 'water' as an enumerated PIECE_ type
 %     double(PIECE_.water) % returns 4, which is the enumerated value of PIECE_.water
 %
 % See Also:
