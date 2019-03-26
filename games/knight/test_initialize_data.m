@@ -1,10 +1,10 @@
 classdef test_initialize_data < matlab.unittest.TestCase %#ok<*PROP>
-    
+
     properties
         board,
         fields,
     end
-    
+
     methods (TestMethodSetup)
         function initialize(self)
             self.board    = repmat(PIECE_.null, 2, 5);
@@ -15,7 +15,7 @@ classdef test_initialize_data < matlab.unittest.TestCase %#ok<*PROP>
                 'original_board'; 'pred_costs'; 'transports'};
         end
     end
-    
+
     methods (Test)
         function test_nominal(self)
             % Nominal

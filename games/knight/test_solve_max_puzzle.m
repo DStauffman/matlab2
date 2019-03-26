@@ -1,10 +1,10 @@
 classdef test_solve_max_puzzle < matlab.unittest.TestCase %#ok<*PROP>
-    
+
     properties
         board,
         moves,
     end
-    
+
     methods (TestMethodSetup)
         function initialize(self)
             self.board     = repmat(PIECE_.null, 3, 5);
@@ -13,7 +13,7 @@ classdef test_solve_max_puzzle < matlab.unittest.TestCase %#ok<*PROP>
             self.moves     = [2, -2]; % TODO: should be 8 moves long?
         end
     end
-    
+
     methods (Test)
         function test_max(self)
             % Max solver
@@ -23,7 +23,7 @@ classdef test_solve_max_puzzle < matlab.unittest.TestCase %#ok<*PROP>
             expected_output_start = sprintf('%s\n','Initializing solver.','Solution found for cost of: 8.');
             self.verifyEqual(output(1:length(expected_output_start)), expected_output_start);
         end
-        
+
         function test_no_solution(self)
             % Unsolvable
             self.assumeTrue(false); % TODO: remove later when this is coded

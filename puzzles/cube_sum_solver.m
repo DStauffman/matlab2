@@ -32,7 +32,7 @@ for it = 1:max_iters
     % verticals
     delta_v = verts - sum(R,1)';
     R = R + mask .* round((delta_v ./ sum(mask, 1))', round_dig);
-    
+
     % diag one
     delta_d1 = diags(1) - sum(R(d1));
     temp = zeros(n, n);
@@ -44,10 +44,10 @@ for it = 1:max_iters
     temp = zeros(n, n);
     temp(d2) = round(delta_d2 ./ sum(mask(d2)), round_dig);
     R = R + mask .* temp;
-    
+
     % enforce minimum and maximum constraints
     R = enforce_minmax(R);
-    
+
     % check if done, and if so display results and exit solver loop
     if is_done(round(R), horzs, verts, diags, d1, d2)
         R = round(R);

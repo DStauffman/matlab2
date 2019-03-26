@@ -1,12 +1,12 @@
 classdef test_solve_next_move < matlab.unittest.TestCase %#ok<*PROP>
-    
+
     properties
         board,
         data,
         start_pos,
         best_costs,
     end
-    
+
     methods (TestMethodSetup)
         function initialize(self)
             self.board     = repmat(PIECE_.null, 2,5);
@@ -18,7 +18,7 @@ classdef test_solve_next_move < matlab.unittest.TestCase %#ok<*PROP>
             self.best_costs = [0 nan nan nan nan; nan nan 1 nan nan];
         end
     end
-    
+
     methods (Test)
         function test_nominal(self)
             % Nominal

@@ -1,17 +1,17 @@
 classdef test_get_transports < matlab.unittest.TestCase %#ok<*PROP>
-    
+
     properties
         board,
         transports,
     end
-    
+
     methods (TestMethodSetup)
         function initialize(self)
             self.board = repmat(PIECE_.null, 3, 3);
             self.transports = [4, 9];
         end
     end
-    
+
     methods (Test)
         function test_valid_transports(self)
             % Valid transports
@@ -25,7 +25,7 @@ classdef test_get_transports < matlab.unittest.TestCase %#ok<*PROP>
             transports = get_transports(self.board);
             self.verifyEqual(transports, zeros(1, 0));
         end
-        
+
         function test_invalid_transports(self)
             % Invalid transports
             self.board(4) = PIECE_.transport;

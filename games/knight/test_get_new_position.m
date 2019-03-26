@@ -1,5 +1,5 @@
 classdef test_get_new_position < matlab.unittest.TestCase %#ok<*PROP>
-    
+
     properties
         pos,
         board,
@@ -10,7 +10,7 @@ classdef test_get_new_position < matlab.unittest.TestCase %#ok<*PROP>
         bad_moves,
         results,
     end
-    
+
     methods (TestMethodSetup)
         function initialize(self)
             %  Move -1       Move +1        Move -2      Move +2       Move -3       Move +3       Move -4       Move +4
@@ -30,7 +30,7 @@ classdef test_get_new_position < matlab.unittest.TestCase %#ok<*PROP>
             self.results      = [4, 20, 22, 6, 16, 24, 10, 2];
         end
     end
-    
+
     methods (Test)
         function test_valid_moves(self)
             % All valid moves
@@ -42,7 +42,7 @@ classdef test_get_new_position < matlab.unittest.TestCase %#ok<*PROP>
                 % TODO: assert something about all_pos(1) and all_pos(2)?
             end
         end
-        
+
         function test_future_moves(self)
             % Not yet done moves
             for i = 1:length(self.future_moves)
@@ -50,14 +50,14 @@ classdef test_get_new_position < matlab.unittest.TestCase %#ok<*PROP>
                 self.verifyError(@() get_new_position(self.board_size, self.pos, this_move, self.transports), 'knight:BadExtendedMoves');
             end
         end
-        
+
         function test_bad_moves(self)
             % Invalid moves
             for this_move=self.bad_moves
                 self.verifyError(@() get_new_position(self.board_size, self.pos, this_move, self.transports), 'knight:InvalidMoveValue');
             end
         end
-        
+
         function test_transport(self)
             % Transport move
             self.board(24)  = PIECE_.transport;

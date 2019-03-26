@@ -1,5 +1,5 @@
 classdef GuiSettings
-    
+
     %% GuiSettings  is a class of settings used by the bac_gui.
     %
     % Input:
@@ -62,7 +62,7 @@ classdef GuiSettings
     %
     % Change Log:
     %     1.  Written by David Stauffer in May 2016.
-    
+
     properties
         % public properties of class
         profile
@@ -83,12 +83,12 @@ classdef GuiSettings
         token       = -1;
         bmi_conv    = 703.0704; % converts from lb/in^2 to kg/m^2
     end
-    
+
     methods
         function obj = GuiSettings(handles)
             %% class constructor method
             % header information is defined for the overall classdef and not duplicated here
-            
+
             switch nargin
                 case 0
                     % set defaults for no input case
@@ -110,7 +110,7 @@ classdef GuiSettings
                     error('bacGui:badNargin', 'Unexpected number of inputs.');
             end
         end
-        
+
         function obj = get_gui_settings(obj,handles)
             %% GET_GUI_SETTINGS  gets the current gui settings based on the handles from the GUI.
             %
@@ -134,7 +134,7 @@ classdef GuiSettings
             %
             % Change Log:
             %     1.  Written by David Stauffer in May 2016.
-            
+
             % check hard-coded values for consistency with handles
             if GuiSettings.token ~= getappdata(handles.figure_bac_gui, 'token')
                 error('bacGui:badToken', 'Unexpected token in handles.');

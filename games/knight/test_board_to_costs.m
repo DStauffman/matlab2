@@ -1,10 +1,10 @@
 classdef test_board_to_costs < matlab.unittest.TestCase %#ok<*PROP>
-    
+
     properties
         board,
         costs,
     end
-    
+
     methods (TestMethodSetup) % also have TestMethodTeardown or only once use via TestClassSetup
         function initialize(self)
             char_board = ['. S E . W'; 'R B T L .'];
@@ -12,7 +12,7 @@ classdef test_board_to_costs < matlab.unittest.TestCase %#ok<*PROP>
             self.costs = [1 0 1 1 2; nan nan 1 5 1];
         end
     end
-    
+
     methods (Test)
         function test_nominal(self)
             % normal usage with all possible costs

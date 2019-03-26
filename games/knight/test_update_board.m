@@ -1,5 +1,5 @@
 classdef test_update_board < matlab.unittest.TestCase %#ok<*PROP>
-    
+
     properties
         old_pos,
         move,
@@ -10,7 +10,7 @@ classdef test_update_board < matlab.unittest.TestCase %#ok<*PROP>
         transports,
         board_size,
     end
-    
+
     methods (TestMethodSetup)
         function initialize(self)
             self.old_pos    = 5;
@@ -24,9 +24,9 @@ classdef test_update_board < matlab.unittest.TestCase %#ok<*PROP>
             self.transports = get_transports(self.board);
         end
     end
-    
+
     methods (Test)
-        
+
         function test_normal(self)
             % Normal move
             [self.board, cost, is_repeat, new_pos] = update_board(self.board, self.move, self.costs, ...
@@ -37,7 +37,7 @@ classdef test_update_board < matlab.unittest.TestCase %#ok<*PROP>
             self.verifyEqual(self.board(self.old_pos), PIECE_.visited);
             self.verifyEqual(self.board(self.new_pos), PIECE_.current);
         end
-        
+
         function test_invalid_move(self)
             % Invalid move
             [self.board, cost, is_repeat, new_pos] = update_board(self.board, -2, self.costs, ...
@@ -48,7 +48,7 @@ classdef test_update_board < matlab.unittest.TestCase %#ok<*PROP>
             self.verifyEqual(self.board(self.old_pos), PIECE_.current);
             self.verifyEqual(self.board(self.new_pos), PIECE_.null);
         end
-        
+
         function test_repeated_move(self)
             % Repeated move
             self.board(self.new_pos) = PIECE_.visited;

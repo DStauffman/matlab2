@@ -1,5 +1,5 @@
 classdef test_sort_best_moves < matlab.unittest.TestCase %#ok<*PROP>
-    
+
     properties
         moves,
         costs,
@@ -8,7 +8,7 @@ classdef test_sort_best_moves < matlab.unittest.TestCase %#ok<*PROP>
         sorted_moves,
         board_size,
     end
-    
+
     methods (TestMethodSetup)
         function initialize(self)
             board             = repmat(PIECE_.null, 5, 8);
@@ -22,14 +22,14 @@ classdef test_sort_best_moves < matlab.unittest.TestCase %#ok<*PROP>
             self.sorted_moves = [2 -3 -2 3 -4 4 -1 1];
         end
     end
-    
+
     methods (Test)
         function test_nominal(self)
             % Nominal
             sorted_moves = sort_best_moves(self.moves, self.costs, self.transports, self.start_pos, self.board_size);
             self.verifyEqual(sorted_moves, self.sorted_moves);
         end
-        
+
         function test_small_board(self)
             % Small board
             board             = zeros(2, 5);

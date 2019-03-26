@@ -1,11 +1,11 @@
 classdef test_get_move_inverse < matlab.unittest.TestCase %#ok<*PROP>
-    
+
     properties
         moves,
         inv_moves,
         bad_moves,
     end
-    
+
     methods (TestMethodSetup)
         function initialize(self)
             self.moves     = [-4, -3, -2, -1, 1, 2, 3, 4];
@@ -13,7 +13,7 @@ classdef test_get_move_inverse < matlab.unittest.TestCase %#ok<*PROP>
             self.bad_moves = [1000, -2000];
         end
     end
-    
+
     methods (Test)
         function test_nominal(self)
             % All inverses
@@ -24,7 +24,7 @@ classdef test_get_move_inverse < matlab.unittest.TestCase %#ok<*PROP>
                 self.verifyEqual(inv_move, this_inv_move);
             end
         end
-        
+
         function test_bad_moves(self)
             % Bad moves
             for this_move=self.bad_moves

@@ -35,7 +35,7 @@ if r == 6 && c == 6
         otherwise
             error('dstauffman:pentago:BadQuad', 'Unexpected value for quad');
     end
-    
+
     % rotate quad
     switch dir
         case 0
@@ -45,7 +45,7 @@ if r == 6 && c == 6
         otherwise
             error('dstauffman:pentago:BadDir', 'Unexpected value for dir');
     end
-    
+
     % place rotated quad
     new_pos = old_pos;
     switch quad
